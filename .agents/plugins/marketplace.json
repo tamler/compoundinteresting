@@ -1,0 +1,20 @@
+{
+  "name": "compoundinteresting",
+  "owner": {
+    "name": "Compound Interesting"
+  },
+  "description": "Compound Interesting market-research skills over its MCP server. Bring your own free API key.",
+  "plugins": [
+    {
+      "name": "compoundinterest",
+      "source": "./plugins/compoundinterest",
+      "description": "Source-backed ticker research, comparisons and bounded screening over the Compound Interesting MCP server.",
+      "version": "0.1.0",
+      "category": "Productivity",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      }
+    }
+  ]
+}

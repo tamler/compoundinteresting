@@ -1,0 +1,9 @@
+{
+  "name": "compoundinterest",
+  "version": "0.1.0",
+  "description": "Source-backed ticker research, comparisons and bounded screening using an explicitly configured CI MCP connection.",
+  "author": { "name": "Compound Interesting" },
+  "homepage": "https://compoundinterest.ing/mcp",
+  "license": "MIT",
+  "skills": "./skills/"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "compoundinterest",
+  "version": "0.1.0",
+  "description": "Source-backed ticker research, comparisons and bounded screening with your CI API key.",
+  "author": { "name": "Compound Interesting" },
+  "homepage": "https://compoundinterest.ing/mcp",
+  "license": "MIT",
+  "mcpServers": {
+    "compoundinterest": {
+      "type": "http",
+      "url": "https://api.compoundinterest.ing/mcp",
+      "headers": { "Authorization": "Bearer ${CI_API_KEY}" }
+    }
+  }
+}
