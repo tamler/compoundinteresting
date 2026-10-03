@@ -17,7 +17,7 @@ export function authContext(overrides = {}) {
   let root;
   if (ctx.platform === 'darwin') root = path.join(ctx.home, 'Library', 'Application Support');
   else if (ctx.platform === 'linux') root = ctx.env.XDG_CONFIG_HOME || path.join(ctx.home, '.config');
-  else throw new CliError('unsupported_platform', 'This preview supports macOS and Linux only.');
+  else throw new CliError('unsupported_platform', 'This client supports macOS and Linux only.');
   if (ctx.uid === undefined || !path.isAbsolute(root) || /[\x00-\x1f\x7f-\x9f]/.test(root)) throw configError();
   const dir = path.join(root, ctx.platform === 'darwin' ? 'CompoundInterest' : 'compoundinterest');
   return { ...ctx, root, dir, file: path.join(dir, 'credentials.json') };

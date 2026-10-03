@@ -24,7 +24,7 @@ test('both OS config locations are isolated; root must be absolute and platform 
   const xdg = authContext({ platform: 'linux', home: ctx.home, env: { XDG_CONFIG_HOME: path.join(ctx.home, 'custom') }, uid: ctx.uid });
   assert.equal(xdg.file, path.join(ctx.home, 'custom', 'compoundinterest', 'credentials.json'));
   assert.throws(() => authContext({ platform: 'linux', env: { XDG_CONFIG_HOME: 'relative' } }), unsafe);
-  assert.throws(() => authContext({ platform: 'win32' }), e => e.code === 'unsupported_platform');
+  assert.throws(() => authContext({ platform: 'win32' }), e => e.code === 'unsupported_platform' && e.message === 'This client supports macOS and Linux only.');
 });
 
 test('private credential persistence, status privacy, atomic replacement and file-only logout', async t => {

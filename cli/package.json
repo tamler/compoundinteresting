@@ -1,6 +1,6 @@
 {
   "name": "@compoundinteresting/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Read-only command-line client for the Compound Interesting Data API: insider, Congress and institutional disclosure signals for US companies",
   "keywords": ["sec", "form-4", "insider-trading", "congress", "13f", "stocks", "market-data", "cli", "mcp"],
